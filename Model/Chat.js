@@ -5,10 +5,16 @@ const ChatSchema = mongoose.Schema({
     userId:{
         type:mongoose.Schema.ObjectId
     },
+    userRole:{
+type:String
+    },
     receiverId:{
         type:mongoose.Schema.ObjectId
 
     },
+    receiverRole:{
+        type:String
+            },
     lastMessage:{
         type:String
     },
